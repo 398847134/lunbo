@@ -64,5 +64,52 @@ export default {
 </script>
 
 <style scoped>
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+img{
+  width: 100%;
+}
+ul{
+  list-style: none;
+  overflow: hidden;
+  height: 500px;
+  margin: 0;
+  padding:0;
+}
+.image-enter-active {
+  transform: translateX(0);
+  transition: all 1s ease;
+}
 
+.image-leave-active {
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.image-enter {
+  transform: translateX(100%)
+}
+
+.image-leave {
+  transform: translateX(0)
+}
+li{
+  width: 100%;
+  float: left;
+}
+.swiper_img_ul{
+  height:562px;
+}
+.swiper_img_ul img{
+  position:absolute;
+}
+#swiper_img_box{
+  position:relative;
+  width:100%;
+  height:562px;
+  overflow:hidden;
+}
 </style>

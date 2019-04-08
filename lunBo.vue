@@ -16,10 +16,16 @@ export default {
     return {
       pics: [], // 轮播图片
       showpic: 0, // 控制图片是否显示
-      positionX: 0 // 鼠标点击的坐标
+      positionX: 0, // 鼠标点击的坐标
+      moveposition: 0 // 移动的当前坐标
     }
   },
   methods: {
+    goto (i) {
+      this.showpic = i
+      this.stop()
+      this.start()
+    },
     stop () {
       clearInterval(this.timer)
     },
